@@ -1,0 +1,24 @@
+metadata:
+  id: CCC.GenAI
+  title: CCC Generative AI Platform
+  description: |
+    Generative AI Platform consist of set of tools provided by the cloud service providers
+    that use large language models (LLMs) and deep learning frameworks to
+    understand, generate, and manipulate natural language, images, code, or audio to
+    create new content, and insights base on patterns and data.
+  category-ids: 
+    -  CCC.AIML
+  version: ""
+  last-modified: "2025-04-19T00:00:00Z"
+  example-csp-services:
+    - provider: AWS
+      service: Amazon Bedrock
+      url: https://docs.aws.amazon.com/bedrock/
+    - provider: Azure
+      service: Azure OpenAI
+      url: https://learn.microsoft.com/azure/ai-services/openai/
+    - provider: GCP
+      service: Google Vertex AI
+      url: https://cloud.google.com/vertex-ai/docs
+  applicability-categories: []
+  mapping-references: []

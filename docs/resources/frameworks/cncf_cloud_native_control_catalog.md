@@ -18,7 +18,7 @@ The CNCF control catalog is structured with the following headings:
 6. **Assurance Level**: Indicates the level of confidence required for the control's implementation, though not well-documented within the catalog.
 7. **Risk Categories**: Classifies controls based on risk, with descriptions derivable from the SSCP and CNSWP documents.
 
-## Key Features
+## Key Capabilities
 
 - **Kubernetes Focus**: The catalog is specifically tailored to address security concerns within Kubernetes environments.
 - **NIST Alignment**: Provides mappings to NIST 800-53r5 controls, aligning with recognized security standards.
@@ -36,28 +36,24 @@ The **Common Cloud Controls (CCC) Catalog** is designed to cover cloud service p
 ### Differences
 
 - **Scope**:
-
   - **CNCF Catalog**: Focused primarily on Kubernetes and related cloud-native technologies.
   - **CCC Catalog**: Broader focus on various CSP services, encompassing a wider range of cloud platforms.
 
 - **Detail Level**:
-
   - **CNCF Catalog**: Less detailed, offering high-level control descriptions without specific testing requirements.
   - **CCC Catalog**: More comprehensive, including detailed implementation guidance and testing requirements.
 
 - **Structure**:
   - **CNCF Catalog**: Organized with seven headings, lacking explicit references to testing requirements.
-  - **CCC Catalog**: More detailed structure, including mappings to service features and testing requirements.
+  - **CCC Catalog**: More detailed structure, including mappings to service capabilities and testing requirements.
 
 ### Areas for further CCC consideration
 
 1. **Section (Control Family/Type)**:
-
    - **CNCF Feature**: The section heading in the CNCF catalog equates to a control family or type, providing clear categorization.
    - **Recommendation**: Incorporate a similar "Section" heading into the CCC catalog to improve organization and navigation.
 
 2. **Assurance Level**:
-
    - **CNCF Feature**: Although not well-documented, assurance levels indicate the confidence required in control implementation.
    - **Recommendation**: Consider integrating assurance levels into the CCC catalog to provide additional context on control importance and implementation rigor.
 

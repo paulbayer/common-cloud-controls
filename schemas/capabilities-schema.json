@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "imported-capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "reference-id": {
+            "type": "string",
+            "description": "Namespace or category for the shared capabilities (e.g., CCC)"
+          },
+          "entries": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "reference-id": {
+                  "type": "string",
+                  "pattern": "^CCC\\.Core.F\\d{2,8}$",
+                  "description": "Global/common capability IDs"
+                },
+                "strength": {
+                  "type": "integer"
+                },
+                "remarks": {
+                  "type": "string"
+                }
+              },
+              "required": ["reference-id", "strength"],
+              "additionalProperties": false
+            }
+          },
+          "remarks": {
+            "type": "string"
+          }
+        },
+        "required": ["reference-id", "entries"],
+        "additionalProperties": false
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^CCC\\.\\w{1,8}\\.F\\d{2,8}$",
+            "description": "Capability ID (e.g., CCC.ObjStor.F01)"
+          },
+          "title": {
+            "type": "string",
+            "description": "Short title of the capability"
+          },
+          "description": {
+            "type": "string",
+            "description": "Detailed explanation of what the capability enables or enforces"
+          }
+        },
+        "required": ["id", "title", "description"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

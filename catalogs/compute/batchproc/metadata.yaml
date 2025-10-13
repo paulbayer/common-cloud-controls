@@ -1,0 +1,26 @@
+metadata:
+  id: CCC.BatchProc
+  title: CCC Batch Processing
+  description: |
+    Batch processing services enable users to execute large-scale,
+    parallelizable computing tasks, such as data processing, analytics, and
+    batch jobs. These services automatically allocate and manage compute
+    to execute batch jobs efficiently and cost-effectively. Users
+    can specify job requirements, dependencies, and scheduling preferences
+    to optimize job execution.
+  category-ids: 
+    -  CCC.Compute
+  version: ""
+  last-modified: "2025-04-19T00:00:00Z"
+  example-csp-services:
+    - provider: AWS
+      service: AWS Batch
+      url: https://docs.aws.amazon.com/batch/
+    - provider: Azure
+      service: Azure Batch
+      url: https://learn.microsoft.com/azure/batch/
+    - provider: GCP
+      service: Google Cloud Batch
+      url: https://cloud.google.com/batch/docs
+  applicability-categories: []
+  mapping-references: []

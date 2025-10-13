@@ -1,0 +1,24 @@
+name: YAML Check
+
+on:
+  workflow_call:
+
+jobs:
+  yaml-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Validate Catalogs Against Schemas
+        uses: InoUno/yaml-ls-check@develop
+        with:
+          schemaMapping: |
+            {
+              "schemas/controls-schema.json": [ "catalogs/**/controls.yml", "catalogs/**/controls.yaml" ],
+              "schemas/capabilities-schema.json": [ "catalogs/**/capabilities.yml", "catalogs/**/capabilities.yaml" ],
+              "schemas/metadata-schema.json": [ "catalogs/**/metadata.yml", "catalogs/**/metadata.yaml" ],
+              "schemas/threats-schema.json": [ "catalogs/**/threats.yml", "catalogs/**/threats.yaml" ],
+              "schemas/categories-schema.json": [ "catalogs/categories.yml", "catalogs/categories.yaml" ]
+            }
